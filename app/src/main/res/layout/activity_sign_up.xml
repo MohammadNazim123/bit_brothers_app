@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/UsernameLayout"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:hint="Enter Your Username"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/UserName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/EmailLayout"
+            android:layout_below="@id/UsernameLayout"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="Enter Your Email"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EmailLayout"
+            android:layout_marginLeft="50dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/PasswordLayout"
+            android:hint="Enter Password"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Password"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/PasswordLayout"
+            android:layout_marginLeft="50dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/RePasswordLayout"
+            android:hint="Re - Enter Password"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RePassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RePasswordLayout"
+            android:layout_marginTop="50dp"
+            android:id="@+id/SignUp"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up"
+            android:background="#003C37"
+
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
